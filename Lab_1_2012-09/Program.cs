@@ -8,7 +8,7 @@ namespace Lab_1_2012_09
         {
             Console.WriteLine("put in a long string with some numbers");       //makes sure that the user puts in a number
             string scentence = Console.ReadLine();      //reads what the user puts in 
-            LookignAttTXT(scentence);       //executs the program that was assigned 
+            LookignAttTXT(scentence);       //executes the program that was assigned 
         }
         private static void LookignAttTXT(string longscentence)     //makes a void to make things eaasier to use 
         {
@@ -25,7 +25,7 @@ namespace Lab_1_2012_09
                             Console.Write(longscentence.Substring(0, StartingTXT));     //writes out the numbers before the found number 
                             Console.ForegroundColor = ConsoleColor.Green;       //changes the text color to green
                             Console.Write(longscentence.Substring(StartingTXT, EndingTXT - StartingTXT + 1));       //Writes out the number we are looking for 
-                            string addnum = longscentence.Substring(StartingTXT, EndingTXT - StartingTXT + 1);      //Adds a string that i can convert later
+                            string addnum = longscentence.Substring(StartingTXT, EndingTXT - StartingTXT + 1);      //Adds a string that can be convert later
                             long addednum = long.Parse(addnum);     //Converts the string to a long 
                             total += addednum;      //adds each number given together 
                             Console.ForegroundColor = OGcolor;      //makes the text white 
